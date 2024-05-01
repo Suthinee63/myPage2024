@@ -1,41 +1,74 @@
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
+
+  img {
+    border-radius: 50%;
+    
   }
-  
-  caption {
-    caption-side: bottom;
+  .border {
+    border: solid 10px white;
+}
+
+  #myDIV {
+    height:220px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
     padding: 10px;
-    font-weight: bold;
   }
-  
-  thead,
-  tfoot {
-    background-color: rgb(228 240 245);
-  }
-  
-  th,
-  td {
-    border: 1px solid rgb(160 160 160);
-    padding: 8px 10px;
-  }
-  
-  td:last-of-type {
+  #myDIV div {
+    /* background-color: rgba(255, 255, 255, 0.8); */
     text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .item1 {
+    grid-row: 1 / span 2;
+  }
+  p {
+    /* color: red; */
+    font-size: 15px;
+  }
+  hr.new2 {
+    border-top: 1px dashed #5e492f;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color : #cc9a86;
   }
   
-  tbody > tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
+  th, td {
+    padding: 8px;
+    text-align: left;
+    /* border-bottom: 1px solid #ddd; */
   }
   
-  tfoot th {
-    text-align: right;
+  tr:hover {background-color:  #bd806d;}
+
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
   }
   
-  tfoot td {
-    font-weight: bold;
+  .grid-item {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
   }
-  
+
+  .item3 {
+    grid-column: 1;
+      grid-row: 1 / span 2;
+   }
+   
+   .item4 {
+     grid-column: 2;
+     grid-row: 1 / span 2;
+   }
+   
+   .item6 {
+     grid-column: 1 / span 3;
+     grid-row: 3;
+   }
